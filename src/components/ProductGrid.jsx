@@ -1,5 +1,3 @@
-import React from 'react';
-
 const products = [
   { id: 1, name: 'Robe Élégante', price: '89.99€', img: '👗' },
   { id: 2, name: 'Chapeau Chic', price: '45.00€', img: '👒' },

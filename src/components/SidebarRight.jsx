@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SidebarRight = () => {
   const catalogs = [
     { title: 'Femme', subs: ['Robes', 'Hauts', 'Pantalons', 'Accessoires'] },
