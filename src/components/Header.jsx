@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <header className="bg-white border-b border-primary p-4 flex items-center justify-between shadow-sm">
       <div className="flex items-center">
-        <img src="/logo.png" alt="Logo" className="h-16 w-auto mr-4" />
-        <h1 className="text-2xl font-bold text-black hidden sm:block">MS Boutique</h1>
+        <Link to="/" className="flex items-center">
+          <img src="/logo.png" alt="Logo" className="h-16 w-auto mr-4" />
+          <h1 className="text-2xl font-bold text-black hidden sm:block">MS Boutique</h1>
+        </Link>
       </div>
       <div className="flex-grow max-w-xl mx-8">
         <div className="relative">
@@ -21,7 +25,7 @@ const Header = () => {
       </div>
       <div className="flex items-center space-x-4">
         <button className="text-black hover:text-primary transition-colors font-medium">Panier</button>
-        <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-black transition-colors font-medium">Connexion</button>
+        <Link to="/login" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-black transition-colors font-medium">Connexion</Link>
       </div>
     </header>
   );
