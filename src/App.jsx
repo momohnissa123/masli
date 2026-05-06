@@ -1,28 +1,23 @@
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import SidebarLeft from './components/SidebarLeft';
-import ProductGrid from './components/ProductGrid';
-import SidebarRight from './components/SidebarRight';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fcf3ea] flex flex-col font-sans selection:bg-primary selection:text-white">
-      <Header />
+    <Router>
+      <div className="min-h-screen bg-[#fcf3ea] flex flex-col font-sans selection:bg-primary selection:text-white">
+        <Header />
 
-      <div className="container mx-auto flex flex-grow pt-8 px-4 pb-12">
-        {/* Left Sidebar: Ads & Promos */}
-        <SidebarLeft />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
 
-        {/* Center: Products */}
-        <ProductGrid />
-
-        {/* Right Sidebar: Catalogs */}
-        <SidebarRight />
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </Router>
   );
 }
 
