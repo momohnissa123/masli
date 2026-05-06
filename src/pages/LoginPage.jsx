@@ -1,4 +1,10 @@
 const LoginPage = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Simulation de la redirection vers le site de gestion des ventes
+    window.location.href = "https://gestion-ventes.ms-boutique.com";
+  };
+
   return (
     <div className="flex flex-grow items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl border border-secondary">
@@ -10,7 +16,7 @@ const LoginPage = () => {
             Identifiez-vous pour accéder à votre compte
           </p>
         </div>
-        <form className="mt-8 space-y-6" action="#" method="POST">
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div className="mb-4">
               <label htmlFor="identification" className="block text-sm font-medium text-gray-700 mb-1">

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SidebarLeft = () => {
   return (
     <aside className="w-64 flex-shrink-0 space-y-6">
