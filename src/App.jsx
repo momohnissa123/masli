@@ -7,18 +7,24 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fcf3ea] flex flex-col font-sans selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-secondary flex flex-col font-sans selection:bg-primary selection:text-white">
       <Header />
 
-      <div className="container mx-auto flex flex-grow pt-8 px-4 pb-12">
+      <div className="container mx-auto flex flex-col lg:flex-row flex-grow pt-8 px-4 pb-12 gap-8">
         {/* Left Sidebar: Ads & Promos */}
-        <SidebarLeft />
+        <div className="w-full lg:w-64">
+          <SidebarLeft />
+        </div>
 
         {/* Center: Products */}
-        <ProductGrid />
+        <div className="flex-grow">
+          <ProductGrid />
+        </div>
 
         {/* Right Sidebar: Catalogs */}
-        <SidebarRight />
+        <div className="w-full lg:w-64">
+          <SidebarRight />
+        </div>
       </div>
 
       <Footer />

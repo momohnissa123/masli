@@ -8,8 +8,8 @@ const SidebarRight = () => {
   ];
 
   return (
-    <aside className="w-64 flex-shrink-0">
-      <div className="bg-secondary p-6 rounded-xl border border-primary/20 sticky top-4 shadow-sm">
+    <aside className="w-full">
+      <div className="bg-secondary p-6 rounded-xl border border-primary/20 lg:sticky lg:top-4 shadow-sm">
         <h2 className="text-xl font-bold text-primary mb-6 border-b border-primary/30 pb-2">Catalogues</h2>
         <ul className="space-y-6">
           {catalogs.map((cat, i) => (

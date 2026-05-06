@@ -2,7 +2,7 @@ import React from 'react';
 
 const SidebarLeft = () => {
   return (
-    <aside className="w-64 flex-shrink-0 space-y-6">
+    <aside className="w-full space-y-6">
       <div className="bg-secondary p-6 rounded-xl border border-primary/20 shadow-sm">
         <h2 className="text-xl font-bold text-primary mb-4 border-b border-primary/30 pb-2">Publicité</h2>
         <div className="aspect-square bg-white rounded-lg flex items-center justify-center border border-primary/10 overflow-hidden group cursor-pointer">

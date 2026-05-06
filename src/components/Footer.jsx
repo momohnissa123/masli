@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-black text-white mt-12 pt-16 pb-8">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <img src="/logo.jpg" alt="Logo" className="h-12 w-auto mb-6 brightness-0 invert" />
+          <img src="/logo.jpeg" alt="Logo" className="h-12 w-auto mb-6 brightness-0 invert" />
           <p className="text-gray-400 leading-relaxed">
             Votre destination luxe pour la mode et les accessoires. Qualité et style réunis.
           </p>

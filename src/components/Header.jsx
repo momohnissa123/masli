@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-white border-b border-primary p-4 flex items-center justify-between shadow-sm">
       <div className="flex items-center">
-        <img src="/logo.jpg" alt="Logo" className="h-16 w-auto mr-4" />
+        <img src="/logo.jpeg" alt="Logo" className="h-16 w-auto mr-4" />
         <h1 className="text-2xl font-bold text-black hidden sm:block">MS Boutique</h1>
       </div>
       <div className="flex-grow max-w-xl mx-8">
