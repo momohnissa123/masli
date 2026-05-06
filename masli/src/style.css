@@ -86,11 +86,6 @@ body {
   text-align: center;
 }
 
-.logo img {
-  max-width: 100%;
-  height: auto;
-}
-
 .search-bar input {
   width: 100%;
   padding: 8px;

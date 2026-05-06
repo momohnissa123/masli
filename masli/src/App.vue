@@ -1,5 +1,4 @@
 <script setup>
-import logo from './assets/logo.jpeg'
 </script>
 
 <template>
@@ -21,9 +20,7 @@ import logo from './assets/logo.jpeg'
     </main>
 
     <aside class="sidebar-right">
-      <div class="logo">
-        <img :src="logo" alt="Logo">
-      </div>
+      <div class="logo">MON SITE</div>
       <div class="search-bar">
         <input type="text" placeholder="Rechercher...">
       </div>
@@ -40,6 +37,7 @@ import logo from './assets/logo.jpeg'
     <footer class="site-footer">
       <div class="connection-options">
         <button>Connexion</button>
+        <button>S'inscrire</button>
       </div>
       <div class="site-info">
         <p>&copy; 2025 Mon Site Web. Tous droits réservés.</p>
