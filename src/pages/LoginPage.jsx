@@ -1,8 +1,12 @@
+import { useNavigate } from 'react-router-dom';
+
 const LoginPage = () => {
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulation de la redirection vers le site de gestion des ventes
-    window.location.href = "https://gestion-ventes.ms-boutique.com";
+    // Redirection vers la page de gestion interne
+    navigate('/gestion');
   };
 
   return (
