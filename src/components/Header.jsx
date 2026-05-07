@@ -25,7 +25,7 @@ const Header = () => {
       </div>
       <div className="flex items-center space-x-4">
         <button className="text-black hover:text-primary transition-colors font-medium">Panier</button>
-        <Link to="/login" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-black transition-colors font-medium">Connexion</Link>
+        <Link to="/connexion" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-black transition-colors font-medium">Connexion</Link>
       </div>
     </header>
   );
